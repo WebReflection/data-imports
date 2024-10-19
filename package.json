@@ -1,10 +1,12 @@
 {
   "name": "data-imports",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "./index.js",
   "module": "./index.js",
-  "exports": {".": "./index.js"},
+  "exports": {
+    ".": "./index.js"
+  },
   "keywords": [
     "importmap",
     "automatic",
