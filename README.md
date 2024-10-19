@@ -43,3 +43,7 @@ By default the generated `importmap` will use the lovely [esm.run](https://esm.r
 ```
 
 Any item with a `!` char will explicitly point at the specified path after such `!`, lovely handled by *jsdelivr* CDN.
+
+## Production
+
+There's nothing bad in using this module in production too but if that's the case every `https://esm.run/data-imports` as script source should rather point explicitly at `https://cdn.jsdelivr.net/npm/data-imports/index.js` to be sure no extra bytes are ever added to the original script, in here created ad-hoc as "*semantically minified*" [code](./index.js).
