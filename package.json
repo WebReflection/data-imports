@@ -1,0 +1,24 @@
+{
+  "name": "data-imports",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./index.js",
+  "module": "./index.js",
+  "exports": {".": "./index.js"},
+  "keywords": [
+    "importmap",
+    "automatic",
+    "vanilla"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "MIT",
+  "description": "Automatically create an importmap script",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/data-imports.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/data-imports/issues"
+  },
+  "homepage": "https://github.com/WebReflection/data-imports#readme"
+}
