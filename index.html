@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>data-imports</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Automatically create an importmap script.">
+  <meta name="twitter:image" content="https://repository-images.githubusercontent.com/875226723/a03b3da4-e3e1-45e8-82de-dea3d79efc28">
+  <meta name="twitter:site" content="@github">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WebReflection/data-imports: Automatically create an importmap script.">
+  <meta name="twitter:description" content="Automatically create an importmap script. Contribute to WebReflection/data-imports development by creating an account on GitHub.">
+  <meta property="og:image" content="https://repository-images.githubusercontent.com/875226723/a03b3da4-e3e1-45e8-82de-dea3d79efc28">
+  <meta property="og:image:alt" content="Automatically create an importmap script. Contribute to WebReflection/data-imports development by creating an account on GitHub.">
+  <meta property="og:site_name" content="GitHub">
+  <meta property="og:type" content="object">
+  <meta property="og:title" content="WebReflection/data-imports: Automatically create an importmap script.">
+  <meta property="og:url" content="https://github.com/WebReflection/data-imports">
+  <meta property="og:description" content="Automatically create an importmap script. Contribute to WebReflection/data-imports development by creating an account on GitHub.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+  <style>
+    body {
+      font-size: large;
+    }
+    .social-media-image {
+      height: 180px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(https://repository-images.githubusercontent.com/875226723/a03b3da4-e3e1-45e8-82de-dea3d79efc28);
+    }
+  </style>
+  <script
+    data-imports="uhtml"
+    src="https://cdn.jsdelivr.net/npm/data-imports/index.js"
+  ></script>
+  <script type="module">
+    import { render, html } from 'uhtml';
+    render(document.body, html`
+      <h1><a href="https://github.com/WebReflection/data-imports">data-imports</a></h1>
+      <p class="social-media-image"></p>
+      <p>
+        This module allows you to forget about tools to consume <abbr title="ECMAScript Module">ESM</abbr> modules by
+        replacing the <code>${'<script data-imports="...">'}</code> with a <code>${'<script type="importmap">'}</code>
+        that will automatically point at modules delivered via <a href="https://www.jsdelivr.com/esm">jsdelivr</a> <abbr title="Content Delivery Network">CDN</abbr title="Content Delivery Network">.
+      </p>
+      <p>
+        Add a single <em>synchronous</em> script on top of your head:
+      </p>
+      <pre><code>${`<script
+  imports="one,or-more,@esm/module"
+  src="https://esm.run/data-imports"
+><\x2fscript>`}</code></pre>
+      <p>and enjoy the simplicity of a tools free development experience, ... or better, a delegated one 🥳</p>
+      <p>Read the <a href="https://github.com/WebReflection/data-imports?tab=readme-ov-file#production">production related details</a> to be fully sold and feel free to <a href="https://x.com/WebReflection">ask me more</a> about it 👋</p>
+    `);
+  </script>
+</head>
+</html>

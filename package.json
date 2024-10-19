@@ -12,6 +12,11 @@
     "automatic",
     "vanilla"
   ],
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "Andrea Giammarchi",
   "license": "MIT",
   "description": "Automatically create an importmap script",
