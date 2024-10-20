@@ -12,7 +12,7 @@ An easy way to use modules without needing tools, published on `npm` to make it 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script
-    data-imports="uhtml,html-escaper"
+    data-imports="uhtml, html-escaper"
     src="https://esm.run/data-imports"
   ></script>
   <!-- that's it -->
@@ -27,7 +27,7 @@ An easy way to use modules without needing tools, published on `npm` to make it 
 </html>
 ```
 
-The `data-imports` field accepts comma separated entries that represent the module name.
+The `data-imports` field accepts comma, spaces, new lines or semicolon separated entries that represent the module name.
 
 By default the generated `importmap` will use the lovely [esm.run](https://esm.run/) service but if you need to directly serve some file it is possible to use a specialized syntax that will point directly to `cdn.jsdelivr.net/npm` instead:
 
